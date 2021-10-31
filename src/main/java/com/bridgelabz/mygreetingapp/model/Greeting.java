@@ -3,6 +3,12 @@ package com.bridgelabz.mygreetingapp.model;
 public class Greeting {
 	private long id;
 	private String name;
+	
+	public Greeting(long incrementAndGet, String name) {
+		setId(incrementAndGet);
+		setName(name);
+	}
+	
 	public long getId() {
 		return id;
 	}
@@ -15,6 +21,7 @@ public class Greeting {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	
 
 }
