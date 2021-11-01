@@ -15,6 +15,8 @@ import com.bridgelabz.mygreetingapp.service.IGreetingService;
 @RestController
 @RequestMapping("/greetings")
 public class GreetingController {
+	private static final String template = "Hello, %s!";
+	private final AtomicLong counter = new AtomicLong();
 	
 	@Autowired
 	private IGreetingService greetingService;
