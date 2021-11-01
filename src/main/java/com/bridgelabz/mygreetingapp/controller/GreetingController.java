@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bridgelabz.mygreetingapp.model.Greeting;
+import com.bridgelabz.mygreetingapp.model.User;
+import com.bridgelabz.mygreetingapp.service.IGreetingService;
 
 @RestController
 @RequestMapping("/greetings")
@@ -19,8 +21,8 @@ public class GreetingController {
 	
 	 @GetMapping("")
 	  public Greeting greeting(@RequestParam(value = "name",defaultValue = "World")String name){
-	        User user - new User();
-	        user.setFirstName(name)l
+	        User user = new User();
+	        user.setFirstName(name);
 	        return greetingService.addGreeting(user);
 	 }
 	
