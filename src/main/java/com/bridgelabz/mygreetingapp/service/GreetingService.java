@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.bridgelabz.mygreetingapp.model.Greeting;
 import com.bridgelabz.mygreetingapp.model.User;
+import com.bridgelabz.mygreetingapp.repository.GreetingRepository;
 
 @Service
 public class GreetingService implements IGreetingService {
@@ -27,6 +28,5 @@ public class GreetingService implements IGreetingService {
 			return null;
 		}
 
-	}
 
 }
